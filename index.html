@@ -7,15 +7,37 @@
 </head>
 <body>
     <!-- javascript events -->
-    <h1 id="head1" style="color: red;">Hello</h1>
+    <h1  id="head1" style="color: red;">Hello</h1>
     <button onclick="document.getElementById('head1').innerHTML='Welcome'">change content</button>
+    <button ondblclick="document.getElementById('head1').style.color='red'">double click</button>
+    <button onmouseenter="document.getElementById('head1').style.color='Blue'">hover</button>
+    <button onmousedown="document.getElementById('head1').style.color='Blue'">click mouse</button>
+    <button onmouseup="document.getElementById('head1').style.color='Blue'">release mouse button</button>
 
+
+    <hr>
+    <img src="Monica Devis.jpg" alt="" id="image1" height="500px" width="350px">
+    <button onclick="document.getElementById('image1').src='Shilpa Das.jpg'" >change img</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <script>
         // document.write("hello doc")
         // alert("dont click OK")
         // console.log("log comment")
         // javasript events - click,dblclick,Mouseenter,mouseover,mouseup .. 
-        document.getElementById("head1").style.color="Blue"
+        // document.getElementById("head1").style.color="Blue"
 
 </script>
 
