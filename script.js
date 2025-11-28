@@ -272,3 +272,27 @@
 
 
 
+// switch case 
+
+
+
+// while loop 
+// pallindrome 
+
+
+// do-while 
+
+
+
+// function 
+
+// function funName(parameters){
+//     block
+// }
+// funName(argument)
+
+
+
+
+
+
