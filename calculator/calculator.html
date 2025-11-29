@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+    <div class="contain d-flex flex-column p-5 justify-content-center align-items-center ">
+        <div class="w-25 shadow d-flex flex-column justify-content-center align-items-center m-2 ">
+            <h1>Calculator
+
+            </h1>
+        <input type="text" id="display"><br>
+        <div>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="0">0</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="1">1</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="2">2</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="3">3</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="4">4</button>
+        </div>
+        <div>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="5">5</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="6">6</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="7">7</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="8">8</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="9">9</button>
+        </div>
+        <div>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="/">/</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="*">*</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="-">-</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="+">+</button>
+            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value=".">.</button>
+        </div>
+        <button onclick="result()" class="btn btn-primary m-2" value="=">=</button>
+        <button onclick="cleard()" class="btn btn-primary m-2" value="clear">clear</button>
+        </div>
+    </div>
+
+
+   
+
+
+
+
+
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
