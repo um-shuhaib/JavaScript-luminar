@@ -21,39 +21,53 @@
 
 
     <div class="contain d-flex flex-column p-5 justify-content-center align-items-center ">
-        <div class="w-25 shadow d-flex flex-column justify-content-center align-items-center m-2 ">
-            <h1>Calculator
+        <div class="w-25 shadow d-flex flex-column justify-content-center align-items-center m-2 bg-dark">
+            <h1 class="text-info">Calculator
 
             </h1>
-        <input type="text" id="display"><br>
-        <div>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="0">0</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="1">1</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="2">2</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="3">3</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="4">4</button>
-        </div>
-        <div>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="5">5</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="6">6</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="7">7</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="8">8</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="9">9</button>
-        </div>
-        <div>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="/">/</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="*">*</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="-">-</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="+">+</button>
-            <button onclick="buttonClick(event)" class="btn btn-primary m-2" value=".">.</button>
-        </div>
-        <button onclick="result()" class="btn btn-primary m-2" value="=">=</button>
-        <button onclick="cleard()" class="btn btn-primary m-2" value="clear">clear</button>
+            <input type="text" id="display" style="pointer-events: none;"><br>
+            <div>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="1">1</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="2">2</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="3">3</button>
+                                <button onclick="cleard()" class="btn btn-primary m-2" value="clear">C</button>
+
+
+            </div>
+            <div>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="4">4</button>
+
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="5">5</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="6">6</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="*">*</button>
+            </div>
+            <div>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="7">7</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="8">8</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="9">9</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="+">+</button>
+
+
+
+            </div>
+            
+            <div>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="0">0</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value=".">.</button>
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="-">-</button>
+
+                <button onclick="buttonClick(event)" class="btn btn-primary m-2" value="/">/</button>
+
+            </div>
+            <div>
+                <button onclick="result()" class="btn btn-primary m-2 w-100" value="=">=</button>
+
+            </div>
         </div>
     </div>
 
 
-   
+
 
 
 
