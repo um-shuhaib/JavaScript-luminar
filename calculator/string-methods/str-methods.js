@@ -1,4 +1,4 @@
-s = "hello"
+s = "heLlo world"
 num = 123
 
 console.log(s.length);
@@ -35,5 +35,13 @@ d = today.getDate().toString().padStart(2,0)
 fullDate = `${y}-${m}-${d}`
 console.log(fullDate);
 
+
+
+console.log(s.replace("l","*"));       
+//  // case insensitive , g for search whole char
+console.log(s.replaceAll(/l/ig,"*"));         // i nte koodey g venam - global ayaley i work aakuoo  
+// console.log(s.replaceAll(/l/g,"*"));  
+
+// matchALl() - //check patterns
 
 
