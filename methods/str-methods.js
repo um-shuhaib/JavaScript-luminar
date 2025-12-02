@@ -112,5 +112,50 @@ setTimeout(
 
 console.log("last");
 
+console.log("--------------------------------------------------------------------");
+
 
 // promises - always a respons - fullfilled, rejected, pending
+
+let promise = new Promise(function(resolve,rejected){    //anonymous function
+    let data = false 
+    if (data){
+        resolve("fulfilled");
+        
+    }else{
+        rejected("rejected")
+    }
+})
+
+
+// for handling
+// then(), catch() 
+
+promise.then((result)=>{      //arrow function 
+    console.log(result);
+    
+}).catch(reject=>{
+    console.log(reject);
+    
+})
+
+console.log("-----------------------------------------------------------------");
+
+
+// Map,filter,reduce,foreach, find - all arguments are funs 
+
+arr2 = [10,20,30,40,50]
+arr2.forEach((i) => {
+    console.log(i);
+    
+});
+
+console.log("-----------------------------------------------------------------");
+arr2.map((i) => {
+    console.log(i);
+    
+})
+console.log("-----------------------------------------------------------------");
+
+let res = arr2.reduce((i,j) => (i+j))
+console.log(res);
