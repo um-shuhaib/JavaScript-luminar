@@ -8,16 +8,24 @@ promise.then((res)=>(res.json()).then((result)=>{
 
     data = ''
     product.forEach((product)=>{
-        data +=`<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>`
-    })
+        data +=`<div class="col">
+        <div class="card h-100 shadow-sm">
+                    <img src="${product.image}" class="card-img-top" alt="Product Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <p class="fw-bold">Price: ₹ ${product.price}</p>
+                        <p>Category: ${product.category}</p>
+                        <div class="d-flex align-items-center">
+                            <span class="me-2">Rating: ⭐ ${product.rating.rate}</span>
+                            <small class="text-muted">(${product.rating.count} reviews)</small>
+                        </div>
+                    </div>
+                    </div>
+                </div>`
+    });
 
     
-}))
+    document.getElementById("pdata").innerHTML = data
+}));
 
