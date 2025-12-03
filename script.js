@@ -308,27 +308,27 @@
 
 
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
 
-let arr = [1,2,3,4,5]
-let [a,b,c] = arr 
-console.log(a);
-console.log(b);
-console.log(c);
+// let arr = [1,2,3,4,5]
+// let [a,b,c] = arr 
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
 // out 
 // 1
 // 2
 // 3
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
-let arr1 = [1,2,3,4,5]
-let [d,e,...f] = arr1 
-console.log(d);
-console.log(e);
-console.log(f);
+// let arr1 = [1,2,3,4,5]
+// let [d,e,...f] = arr1 
+// console.log(d);
+// console.log(e);
+// console.log(f);
 
 // out 
 // 1
@@ -336,17 +336,17 @@ console.log(f);
 // [ 3, 4, 5 ]
 
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
-let obj = {name:"manu",age:24}
-let {name,age} = obj 
-if (!name || !age){
-    console.log("invalid");
+// let obj = {name:"manu",age:24}
+// let {name,age} = obj 
+// if (!name || !age){
+//     console.log("invalid");
     
-}else{
-    console.log("valid");
+// }else{
+//     console.log("valid");
     
-}
+// }
 
 
 
@@ -361,4 +361,34 @@ if (!name || !age){
 // })
 
 console.log("---------------------------");
+
+                                   // regular expression 
+
+// i - case insensitive 
+// g - global search - loop string 
+// m - line by line 
+
+// matchMedia,matchAll,test 
+
+
+s = "Javascript java"
+pattern = /java/g
+console.log(pattern.test(s));
+
+pattern = /java/i 
+console.log(s.match(pattern));
+
+pattern = /A/ig 
+res = s.matchAll(pattern)
+for (let i of res){
+    console.log(i);
+    
+}
+
+console.log(s.replace("a","*"));
+console.log(s.replaceAll(/a/g,"*"));
+
+
+
+
 
