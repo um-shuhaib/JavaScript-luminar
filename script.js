@@ -292,7 +292,73 @@
 // funName(argument)
 
 
+// ... - spread operator 
+// de structoring 
+
+// arr1 = [1,2,3]
+// arr2 = [4,5,6]
+// arr3 = [...arr1,...arr2]
+// console.log(arr3);
+
+
+// obj1 = {name:"shu",age:"21"}
+// obj2 = {email:"ggg.gmail.com"}
+// obj3 = {...obj1,...obj2}
+// console.log(obj3);
 
 
 
+console.log("-------------------------------------");
+
+
+let arr = [1,2,3,4,5]
+let [a,b,c] = arr 
+console.log(a);
+console.log(b);
+console.log(c);
+
+// out 
+// 1
+// 2
+// 3
+
+console.log("-------------------------------------");
+
+let arr1 = [1,2,3,4,5]
+let [d,e,...f] = arr1 
+console.log(d);
+console.log(e);
+console.log(f);
+
+// out 
+// 1
+// 2
+// [ 3, 4, 5 ]
+
+
+console.log("-------------------------------------");
+
+let obj = {name:"manu",age:24}
+let {name,age} = obj 
+if (!name || !age){
+    console.log("invalid");
+    
+}else{
+    console.log("valid");
+    
+}
+
+
+
+// console.log("-------------------------------------");
+// hooks - usestate  - asynchronous - hooks are special variable for handling api datas - js uses hooks instead of var 
+
+// state - is an type of hooks
+// const [product,setProoduct] = usestake()     //-  destructure [for array] , {for obj}
+
+// then ((res)=>{
+//     setProoduct()                         //    - here only after fullfilled then the setproduct called and assigned to the product
+// })
+
+console.log("---------------------------");
 
