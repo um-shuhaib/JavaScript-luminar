@@ -468,3 +468,13 @@ console.log("---------------------------");
 // virtual DOM 
 // tree like structure
 // components - jsx 
+
+
+
+//                                                           // react
+
+// 1. js library 
+// 2. virtual DOM 
+// 3. components based approach 
+// 4. single page application 
+// 5. one way data binding 
