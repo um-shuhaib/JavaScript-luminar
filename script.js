@@ -366,29 +366,95 @@ console.log("---------------------------");
 
 // i - case insensitive 
 // g - global search - loop string 
-// m - line by line 
+// m - multi line
 
-// matchMedia,matchAll,test 
+// match,matchAll,test 
 
 
-s = "Javascript java"
-pattern = /java/g
-console.log(pattern.test(s));
+// s = `Javascript java
+// hi Jave`
+// pattern = /java/g
+// console.log(pattern.test(s));
 
-pattern = /java/i 
-console.log(s.match(pattern));
+// pattern = /java/i 
+// console.log(s.match(pattern));
 
-pattern = /A/ig 
-res = s.matchAll(pattern)
-for (let i of res){
-    console.log(i);
+// pattern = /A/ig 
+// res = s.matchAll(pattern)
+// for (let i of res){
+//     console.log(i);
     
-}
+// }
 
-console.log(s.replace("a","*"));
-console.log(s.replaceAll(/a/g,"*"));
+// console.log(s.replace("a","*"));
+// console.log(s.replaceAll(/a/g,"*"));
+
+// str = `java
+// is
+// java and java
+// is`
+
+// pattern = /^j/m
+// console.log(str.match(pattern)); // match normally take as single string but m will check each lines first occurence with ^
+
+// // out 
+// // [
+// //   'j',
+// //   index: 0,
+// //   input: 'java\nis\njava and java\nis',
+// //   groups: undefined
+// // ]
 
 
+// console.log("-------------------------------------");
+
+
+// str = `ava
+// is
+// java and java
+// is`
+
+// pattern = /^j/m
+// console.log(str.match(pattern)); 
+
+// // out 
+// // [
+// //   'j',
+// //   index: 7,
+// //   input: 'ava\nis\njava and java\nis',
+// //   groups: undefined
+// // ]
+
+// console.log("-------------------------------------");
+
+
+// str = `ava
+// is
+// ava and java
+// is`
+
+// pattern = /^j/m
+// console.log(str.match(pattern)); 
+
+// // out 
+// // null
+
+
+//   ^ - for starting            //same like python RE
+//   $ - for ending 
+//  /d - digits 
+//  /D - non digits 
+//  /w - word char (a-z,0-9,_)
+//  /W - non char
+//  /s - space 
+//  /S - non space 
+//  /bx - ^x for all word in string 
+//  x/b - x$
+//  in* - zero or one - in,i,inn 
+//  in+ - one or more - in,inn,innn 
+//  in? - atmost one - i,in 
+//  i}n - i or n 
+//  . - single charectors - a.c = abc ; a..b = abbc
 
 
 
