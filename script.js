@@ -458,3 +458,13 @@ console.log("---------------------------");
 
 
 
+
+
+// single page applications
+
+// react - jsx - library
+// angular - framework, typescript 
+
+// virtual DOM 
+// tree like structure
+// components - jsx 
